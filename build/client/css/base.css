@@ -1,0 +1,171 @@
+body, html { height: 100%; }
+
+body {
+  background-color: black;
+
+  background-image: url(redox-01.texture.png);
+}
+
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #CCC; /* old IE */
+  background-color: #CCC; /* Modern Browsers */
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #FFF;
+  text-decoration: bold;
+
+  -webkit-box-shadow: inset 0px 0px 15px 4px rgba(0,0,0,0.18);
+  -moz-box-shadow: inset 0px 0px 15px 4px rgba(0,0,0,0.18);
+  box-shadow: inset 0px 0px 15px 4px rgba(0,0,0,0.18);
+}
+
+#content-block {
+  width:910px;
+  height:100%;
+
+  text-align: left;
+  background-color: rgb(255,255,255);
+  display: inline-block;
+  /* for ie6/7: */
+  *display: inline;
+  zoom: 1; visibility: visible;
+}
+
+#comments {
+  border-width: thin; width: 90%; padding-left: 1%; margin-left: 5%; font-size: 90%;
+}
+
+.content-border {
+  margin-top:7%;
+  padding: 15px;
+
+  border: solid;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.4);
+
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.post-image {
+  height: 200px;
+  max-width: 100%;
+}
+
+.post-image-expanded {
+  height: auto;
+  width: 100%;
+}
+
+.form-control {
+  background-color: rgba(0,200,0,0.1);
+}
+
+.msg-container {
+  margin-left: 2%; margin-right: 2%; word-wrap: break-word; white-space: pre-line;
+}
+
+.bottom-notifier {
+  position: absolute; bottom: 0px; width: 100%; text-align: center; font-size: 2em;
+  
+  font-weight: bold;
+
+  border-top: solid;
+  border-width: 1px;
+  
+
+  
+}
+
+#bottom-notifier {
+  background-color: #8aab96; background-image: url(redox-01.texture.png);
+}
+
+#bottom-notifier-msg {
+  padding: 1%;
+}
+
+.bottom-notifier-info {
+  background: white;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,200,0,0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0.1), rgba(0,200,0,0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0.1), rgba(0,200,0,0.3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,200,0,0.3)); /* Standard syntax */ 
+}
+.bottom-notifier-warn {
+  background: red;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(255,0,0,0.6)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0.1), rgba(255,0,0,0.6)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0.1), rgba(255,0,0,0.6)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(255,0,0,0.6)); /* Standard syntax */ 
+}
+
+@media only screen and (max-width: 910px) {
+  #content-block {
+    width: 100%;
+  }
+
+  .post-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .content-border {
+    margin-top: 17%;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+     box-shadow: none;
+
+     border-radius: 0px;
+     -moz-border-radius: 0px;
+     -webkit-border-radius: 0px;
+  }
+
+  .bottom-notifier {
+    font-size: 1.5em;
+  }
+}
