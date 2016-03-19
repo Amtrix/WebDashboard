@@ -16,7 +16,7 @@
 
 // config
 var confAppIp: string = "localhost";
-var confAppPort: number = process.env.PORT || 8090;
+var confAppPort: number = process.env.PORT || 8421;
 
 var validUrl = require('valid-url');
 var koa = require("koa");
